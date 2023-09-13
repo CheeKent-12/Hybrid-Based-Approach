@@ -1,4 +1,2 @@
-
-streamlite
-prettytable 3.9.0
-
+streamlit
+prettytable==3.9.0
