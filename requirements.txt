@@ -1,2 +1,4 @@
 streamlit
 prettytable==3.9.0
+ipython==7.25.0
+
