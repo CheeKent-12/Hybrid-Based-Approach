@@ -1,4 +1,4 @@
-/home/adminuser/venv/bin/python -m pip install --upgrade pip
+/home/adminuser/venv/bin/python pip install --upgrade pip
 streamlite
 prettytable 3.9.0
 
