@@ -1,0 +1,4 @@
+prettytable
+other_dependency1
+other_dependency2
+# Add other dependencies as needed
