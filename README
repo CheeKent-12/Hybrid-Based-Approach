@@ -1,0 +1,7 @@
+echo "# Hybrid-Based-Approach" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/CheeKent-12/Hybrid-Based-Approach.git
+git push -u origin main
