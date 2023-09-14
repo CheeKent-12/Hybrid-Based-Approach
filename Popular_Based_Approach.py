@@ -45,16 +45,19 @@ C = books_data["average_rating"].mean()
 # Calculate the minimum number of ratings_count required to be in the chart, m
 m = books_data["ratings_count"].quantile(quantile_value)
 
+
 # Define weighted_rating function
 def weighted_rating(x, m=m, C=C):
     v = x["ratings_count"]
     R = x["average_rating"]
     return (v / (v + m) * R) + (m / (m + v) * C)
 
+
 # Define a function for popularity-based recommendations
 def popularity_based_recommendations(n):
     recommendations = new_books_data.head(n)
     return recommendations
+
 
 # Display recommendations when the button is clicked
 if recommend_button:
@@ -78,5 +81,5 @@ if recommend_button:
         start=1,
     ):
         st.write(f"{i}. {title} ({year}) by {author}")
-        st.image(image_url, caption=title)
+        st.image(image_url, caption=title, width=200, use_column_width=False)
         st.write("")

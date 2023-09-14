@@ -118,6 +118,6 @@ if st.sidebar.button("Get Recommendations"):
 
         st.write(table)
 
-        # Display book images for the recommended books
         for _, row in recommended_books.head(num_recommendations).iterrows():
-            st.image(row["image_url"], caption=row["title"])
+            st.image(row["image_url"], width=100)
+            st.text(row["title"])  # Add the title as text
